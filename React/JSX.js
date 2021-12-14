@@ -1,13 +1,14 @@
 // Boiler:
   const JSX = (
     <div>
-      <h1>Hello World</h1>
-      <p>Lets render this to the DOM</p>
+      <h1>Add a class to this div</h1>
     </div>
   );
 // Challenge:
-  // Use the ReactDOM.render() method to render this component to the page.
-  // Use document.getElementById() to select the DOM node to render them to.
-  // There is a div with id='challenge-node' available for you to use.
+  // Apply a class of myDiv to the div provided in the JSX code.
 // Solution:
-  ReactDOM.render(JSX, document.getElementById('challenge-node'));
+  const JSX = (
+    <div className='myDiv'>
+      <h1>Add a class to this div</h1>
+    </div>
+  );
