@@ -1,17 +1,17 @@
 // Boiler:
-  // NONE
+  const JSX = (
+    <div>
+      <h1>This is a block of JSX</h1>
+      <p>Here's a subtitle</p>
+    </div>
+  );
 // Challenge:
-  // Define a new constant JSX that renders a div which contains the following elements in order:
-  // An h1, a p, and an unordered list that contains three li items. You can include any text you want within each element.
+  // Add a comment somewhere within the provided div element, without modifying the existing h1 or p elements.
 // Solution:
-const JSX = (
-  <div>
-    <h1>Something</h1>
-    <p>Something Else</p>
-    <ul>
-      <li>one</li>
-      <li>two</li>
-      <li>three</li>
-    </ul>
-  </div>
-);
+  const JSX = (
+    <div>
+      <h1>This is a block of JSX</h1>
+      {/* This is a comment! */}
+      <p>Here's a subtitle</p>
+    </div>
+  );
