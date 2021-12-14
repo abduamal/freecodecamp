@@ -1,18 +1,22 @@
 // Boiler:
 // const JSX = (
-//   <div>
-//     <h2>Welcome to React!</h2> <br >
-//       <p>Be sure to close all tags!</p>
-//       <hr >
-//       </div>
-//       );
+  const MyComponent = function() {
+    // Change code below this line
+
+
+
+    // Change code above this line
+  }
 // Challenge:
-  // Apply a class of myDiv to the div provided in the JSX code.
+  // Complete this function so it returns a single
+  // div element which contains some string of text.
 // Solution:
-  const JSX = (
-    <div>
-      <h2>Welcome to React!</h2> <br />
-      <p>Be sure to close all tags!</p>
-      <br />
-    </div>
-  );
+  const MyComponent = function() {
+    // Change code below this line
+    return(
+      <div>
+        <p>Stateless React Component</p>
+      </div>
+    )
+    // Change code above this line
+  }
