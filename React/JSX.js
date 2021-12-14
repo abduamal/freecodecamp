@@ -1,17 +1,13 @@
 // Boiler:
   const JSX = (
     <div>
-      <h1>This is a block of JSX</h1>
-      <p>Here's a subtitle</p>
+      <h1>Hello World</h1>
+      <p>Lets render this to the DOM</p>
     </div>
   );
 // Challenge:
-  // Add a comment somewhere within the provided div element, without modifying the existing h1 or p elements.
+  // Use the ReactDOM.render() method to render this component to the page.
+  // Use document.getElementById() to select the DOM node to render them to.
+  // There is a div with id='challenge-node' available for you to use.
 // Solution:
-  const JSX = (
-    <div>
-      <h1>This is a block of JSX</h1>
-      {/* This is a comment! */}
-      <p>Here's a subtitle</p>
-    </div>
-  );
+  ReactDOM.render(JSX, document.getElementById('challenge-node'));
