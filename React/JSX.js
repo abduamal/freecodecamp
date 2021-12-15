@@ -1,22 +1,31 @@
 // Boiler:
-// const JSX = (
-  const MyComponent = function() {
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
     // Change code below this line
 
 
 
     // Change code above this line
   }
+};
 // Challenge:
-  // Complete this function so it returns a single
-  // div element which contains some string of text.
+  // Finish writing the render method so it returns a div element that
+  // contains an h1 with the text Hello React!.
 // Solution:
-  const MyComponent = function() {
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
     // Change code below this line
     return(
-      <div>
-        <p>Stateless React Component</p>
-      </div>
+    <div>
+    <h1>Hello React!</h1>
+    </div>
     )
     // Change code above this line
   }
+};
