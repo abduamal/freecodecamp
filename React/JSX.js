@@ -18,25 +18,22 @@ class TypesOfFood extends React.Component {
 // Change code below this line
 
 // Challenge:
-  //Nest two components inside of Fruits — first NonCitrus, and then Citrus. Both of these components are provided for you behind the scenes.
-  // Next, nest the Fruits class component into the TypesOfFood component, below the h1 heading element and above Vegetables
+  //Define a class MyComponent that extends React.Component.
+  //Its render method should return a div that contains an h1 tag with the text: My First React Component! in it.
 // Solution:
-class TypesOfFood extends React.Component {
-  constructor(props) {
-    super(props);
+// Change code below this line
+
+class MyComponent extends React.Component {
+  constructor(props){
+    super(props)
   }
   render() {
-    return (
+    return(
       <div>
-        <h1>Types of Food:</h1>
-        {/* Change code below this line */}
-        <Fruits/>
-        <Vegetables/>
-        {/* Change code above this line */}
+      <h1>My First React Component!</h1>
       </div>
-    );
+    )
   }
-};
+}
 
-// Change code below this line
-ReactDOM.render(<TypesOfFood />, document.getElementById('challenge-node'))
+ReactDOM.render(<MyComponent />, document.getElementById('challenge-node'))
