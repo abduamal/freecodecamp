@@ -1,37 +1,12 @@
 // Boiler:
-const TypesOfFruit = () => {
-  return (
-    <div>
-      <h2>Fruits:</h2>
-      <ul>
-        <li>Apples</li>
-        <li>Blueberries</li>
-        <li>Strawberries</li>
-        <li>Bananas</li>
-      </ul>
-    </div>
-  );
-};
-
-const Fruits = () => {
-  return (
-    <div>
-      { /* Change code below this line */ }
-
-      { /* Change code above this line */ }
-    </div>
-  );
-};
-
-class TypesOfFood extends React.Component {
+class Fruits extends React.Component {
   constructor(props) {
     super(props);
   }
-
   render() {
     return (
       <div>
-        <h1>Types of Food:</h1>
+        <h2>Fruits:</h2>
         { /* Change code below this line */ }
 
         { /* Change code above this line */ }
@@ -39,15 +14,33 @@ class TypesOfFood extends React.Component {
     );
   }
 };
+
+class TypesOfFood extends React.Component {
+  constructor(props) {
+     super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h1>Types of Food:</h1>
+        { /* Change code below this line */ }
+        { /* Change code above this line */ }
+        <Vegetables />
+      </div>
+    );
+  }
+};
 // Challenge:
-  //Take the TypesOfFruit component and compose it, or nest it, within the Fruits component.
-  // Then take the Fruits component and nest it within the TypesOfFood component
+  //Nest two components inside of Fruits — first NonCitrus, and then Citrus. Both of these components are provided for you behind the scenes.
+  // Next, nest the Fruits class component into the TypesOfFood component, below the h1 heading element and above Vegetables
 // Solution:
 const Fruits = () => {
   return (
     <div>
+      <h2>Fruits:</h2>
       { /* Change code below this line */ }
-      <TypesOfFruit/>
+      <NonCitrus/>
+      <Citrus/>
       { /* Change code above this line */ }
     </div>
   );
@@ -65,6 +58,7 @@ const Fruits = () => {
         { /* Change code below this line */ }
         <Fruits/>
         { /* Change code above this line */ }
+        <Vegetables />
       </div>
     );
   }
