@@ -1,20 +1,19 @@
 // Boiler:
-function multiplyAll(arr) {
-  let product = 1;
-  // Only change code below this line
+const myArray = [];
+let i = 10;
 
-  // Only change code above this line
-  return product;
+// Only change code below this line
+while (i < 5) {
+  myArray.push(i);
+  i++;
 }
 
-multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
-
 // Challenge:
-  // Modify function multiplyAll so that it returns the product of all the
-  // numbers in the sub-arrays of arr.
+  // Change the while loop in the code to a do...while loop so the loop
+  // will push only the number 10 to myArray, and i will be equal to 11
+  // when your code has finished running
 // Solution:
-  for (let i = 0; i < arr.length; i++){
-    for (let j = 0; j < arr[i].length; j++) {
-      product *= arr[i][j]
-    }
-  }
+do {
+  myArray.push(i);
+  i++;
+} while (i < 11)
