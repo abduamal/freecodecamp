@@ -1,12 +1,12 @@
 // Boiler:
 
-const myArray = [];
-
-// Only change code below this line
+const myArr = [2, 3, 4, 5, 6];
 
 
 // Challenge:
-  //Push the odd numbers from 9 through 1 to myArray using a for loop.
-  for (let i = 9; i > -1; i -= 2) {
-    myArray.push(i)
+  // Declare and initialize a variable total to 0.
+  // Use a for loop to add the value of each element of the myArr array to total.
+  let total = 0
+  for (let i = 0; i < myArr.length; i++){
+    total += myArr[i]
   }
