@@ -1,13 +1,13 @@
 // Boiler:
+
 const myArray = [];
 
 // Only change code below this line
 
+
 // Challenge:
-  //Add the numbers 5 through 0 (inclusive) in descending order to myArray using a while loop.
+  //Use a for loop to push the values 1 through 5 onto myArray.
 // Solution:
-let i = 5
-while(i >= 0) {
-  myArray.push(i);
-  i--;
+for (let i = 1; i < 6; i++) {
+  myArray.push(i)
 }
