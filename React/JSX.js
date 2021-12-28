@@ -6,8 +6,7 @@ const myArray = [];
 
 
 // Challenge:
-  //Use a for loop to push the values 1 through 5 onto myArray.
-// Solution:
-for (let i = 1; i < 6; i++) {
-  myArray.push(i)
+  //Push the odd numbers from 1 through 9 to myArray using a for loop.
+for (let i = 1; i < 10; i += 2) {
+  myArray.push(i);
 }
