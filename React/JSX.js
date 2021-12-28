@@ -1,32 +1,13 @@
 // Boiler:
-const CurrentDate = (props) => {
-  return (
-    <div>
-      { /* Change code below this line */ }
-      <p>The current date is: </p>
-      { /* Change code above this line */ }
-    </div>
-  );
-};
+const myArray = [];
 
-class Calendar extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <div>
-        <h3>What date is it?</h3>
-        { /* Change code below this line */ }
-        <CurrentDate />
-        { /* Change code above this line */ }
-      </div>
-    );
-  }
-};
+// Only change code below this line
 
 // Challenge:
-  //Define a class MyComponent that extends React.Component.
-  //Its render method should return a div that contains an h1 tag with the text: My First React Component! in it.
+  //Add the numbers 5 through 0 (inclusive) in descending order to myArray using a while loop.
 // Solution:
-// Change code below this line
+let i = 5
+while(i >= 0) {
+  myArray.push(i);
+  i--;
+}
