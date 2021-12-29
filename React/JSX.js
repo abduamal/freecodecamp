@@ -1,19 +1,16 @@
 // Boiler:
-const myArray = [];
-let i = 10;
+function sum(arr, n) {
+  // Only change code below this line
 
-// Only change code below this line
-while (i < 5) {
-  myArray.push(i);
-  i++;
+  // Only change code above this line
 }
 
 // Challenge:
-  // Change the while loop in the code to a do...while loop so the loop
-  // will push only the number 10 to myArray, and i will be equal to 11
-  // when your code has finished running
+  // Write a recursive function, sum(arr, n), that returns the
+  // sum of the first n elements of an array arr.
 // Solution:
-do {
-  myArray.push(i);
-  i++;
-} while (i < 11)
+if (n <= 0) {
+  return 0;
+} else {
+  return sum(arr, n - 1) + arr[n - 1]
+}
