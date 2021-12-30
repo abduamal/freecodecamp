@@ -1,15 +1,45 @@
 // Boiler:
-function randomFraction() {
+const CurrentDate = (props) => {
+  return (
+    <div>
+      { /* Change code below this line */ }
+      <p>The current date is: </p>
+      { /* Change code above this line */ }
+    </div>
+  );
+};
 
-  // Only change code below this line
-
-  return 0
-
-  // Only change code above this line
-}
-
+class Calendar extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h3>What date is it?</h3>
+        { /* Change code below this line */ }
+        <CurrentDate />
+        { /* Change code above this line */ }
+      </div>
+    );
+  }
+};
 // Challenge:
-  //Change randomFraction to return a random number instead of returning 0.
+  //There are Calendar and CurrentDate components in the code editor.
+  //When rendering CurrentDate from the Calendar component, pass in a property
+  // of date assigned to the current date from JavaScript's Date object.
+  //Then access this prop in the CurrentDate component, showing its value within
+  // the p tags.
 
 // Solution:
-return Math.random()
+<div>
+  { /* Change code below this line */ }
+  <p>The current date is: {props.date}</p>
+  { /* Change code above this line */ }
+</div>
+<div>
+  <h3>What date is it?</h3>
+  { /* Change code below this line */ }
+  <CurrentDate date={Date()}/>
+  { /* Change code above this line */ }
+</div>
