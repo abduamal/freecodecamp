@@ -2,25 +2,29 @@
 
 const Items = (props) => {
   return <h1>Current Quantity of Items in Cart: {props.quantity}</h1>
-}
+};
+
+// Change code below this line
+
+// Change code above this line
 
 Items.defaultProps = {
   quantity: 0
-}
+};
 
 class ShoppingCart extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
-    { /* Change code below this line */ }
     return <Items />
-    { /* Change code above this line */ }
   }
 };
 
 
 // Challenge:
-  // Override the default prop by passing in a value of 10 for quantity.
+  //Define propTypes for the Items component to require quantity
+  // as a prop and verify that it is of type number.
+// Solution:
 
-    return <Items quantity={10}/>
+Items.propTypes = { quantity: PropTypes.number.isRequired };
