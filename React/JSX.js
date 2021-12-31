@@ -1,18 +1,26 @@
 // Boiler:
 
-const ShoppingCart = (props) => {
-  return (
-    <div>
-      <h1>Shopping Cart Component</h1>
-    </div>
-  )
+const Items = (props) => {
+  return <h1>Current Quantity of Items in Cart: {props.quantity}</h1>
+}
+
+Items.defaultProps = {
+  quantity: 0
+}
+
+class ShoppingCart extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    { /* Change code below this line */ }
+    return <Items />
+    { /* Change code above this line */ }
+  }
 };
-// Change code below this line
 
 
 // Challenge:
-  //The code editor shows a ShoppingCart component.
-  //Define default props on this component which specify a prop items with a value of 0.
+  // Override the default prop by passing in a value of 10 for quantity.
 
-// Solution:
-ShoppingCart.defaultProps = { items: 0}
+    return <Items quantity={10}/>
