@@ -1,48 +1,18 @@
 // Boiler:
-const List = (props) => {
-  { /* Change code below this line */ }
-  return <p>{}</p>
-  { /* Change code above this line */ }
-};
 
-class ToDo extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <div>
-        <h1>To Do Lists</h1>
-        <h2>Today</h2>
-        { /* Change code below this line */ }
-        <List/>
-        <h2>Tomorrow</h2>
-        <List/>
-        { /* Change code above this line */ }
-      </div>
-    );
-  }
+const ShoppingCart = (props) => {
+  return (
+    <div>
+      <h1>Shopping Cart Component</h1>
+    </div>
+  )
 };
+// Change code below this line
+
+
 // Challenge:
-  //There are List and ToDo components in the code editor. When rendering each
-   // List from the ToDo component, pass in a tasks property assigned to an
-   // array of to-do tasks, for example ["walk dog", "workout"].
-  //Then access this tasks array in the List component, showing its value
-  // within the p element. Use join(", ") to display the props.tasksarray
-  // in the p element as a comma separated list.
-  //Today's list should have at least 2 tasks and tomorrow's should have at least 3 tasks.
+  //The code editor shows a ShoppingCart component.
+  //Define default props on this component which specify a prop items with a value of 0.
 
 // Solution:
-{ /* Change code below this line */ }
-return <p>{props.tasks.join(', ')}</p>
-{ /* Change code above this line */ }
-};
-<div>
-  <h1>To Do Lists</h1>
-  <h2>Today</h2>
-  { /* Change code below this line */ }
-  <List tasks={["walk dog", "workout"]} />
-  <h2>Tomorrow</h2>
-  <List tasks={["walk dog", "workout", "play"]} />
-  { /* Change code above this line */ }
-</div>
+ShoppingCart.defaultProps = { items: 0}
