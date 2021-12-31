@@ -1,30 +1,44 @@
 // Boiler:
 
-const Items = (props) => {
-  return <h1>Current Quantity of Items in Cart: {props.quantity}</h1>
-};
-
-// Change code below this line
-
-// Change code above this line
-
-Items.defaultProps = {
-  quantity: 0
-};
-
-class ShoppingCart extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
+
   }
   render() {
-    return <Items />
+    return (
+        <div>
+            { /* Change code below this line */ }
+            <Welcome />
+            { /* Change code above this line */ }
+        </div>
+    );
+  }
+};
+
+class Welcome extends React.Component {
+  constructor(props) {
+    super(props);
+
+  }
+  render() {
+    return (
+        <div>
+          { /* Change code below this line */ }
+          <p>Hello, <strong></strong>!</p>
+          { /* Change code above this line */ }
+        </div>
+    );
   }
 };
 
 
 // Challenge:
-  //Define propTypes for the Items component to require quantity
-  // as a prop and verify that it is of type number.
+  //Render an instance of the Welcome component in the parent component App.
+  //Here, give Welcome a prop of name and assign it a value of a string.
+  //Within the child, Welcome, access the name prop within the strong tags.
+
 // Solution:
 
-Items.propTypes = { quantity: PropTypes.number.isRequired };
+<Welcome name={'Amal'}/>
+<p>Hello, <strong>{this.props.name}</strong>!</p>
