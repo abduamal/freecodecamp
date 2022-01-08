@@ -1,44 +1,29 @@
 // Boiler:
 
-class App extends React.Component {
+class StatefulComponent extends React.Component {
   constructor(props) {
     super(props);
+    // Only change code below this line
 
+    // Only change code above this line
   }
   render() {
     return (
-        <div>
-            { /* Change code below this line */ }
-            <Welcome />
-            { /* Change code above this line */ }
-        </div>
+      <div>
+        <h1>{this.state.name}</h1>
+      </div>
     );
   }
 };
-
-class Welcome extends React.Component {
-  constructor(props) {
-    super(props);
-
-  }
-  render() {
-    return (
-        <div>
-          { /* Change code below this line */ }
-          <p>Hello, <strong></strong>!</p>
-          { /* Change code above this line */ }
-        </div>
-    );
-  }
-};
+// Change code below this line
 
 
 // Challenge:
-  //Render an instance of the Welcome component in the parent component App.
-  //Here, give Welcome a prop of name and assign it a value of a string.
-  //Within the child, Welcome, access the name prop within the strong tags.
+  //Initialize the component with state in the constructor
+  // and assign your name to a property of name.
 
 // Solution:
 
-<Welcome name={'Amal'}/>
-<p>Hello, <strong>{this.props.name}</strong>!</p>
+this.state = {
+  name: 'Amal'
+}
