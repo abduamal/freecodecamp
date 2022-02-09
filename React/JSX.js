@@ -1,16 +1,13 @@
 // Boiler:
 
-class StatefulComponent extends React.Component {
+class CampSite extends React.Component {
   constructor(props) {
     super(props);
-    // Only change code below this line
-
-    // Only change code above this line
   }
   render() {
     return (
       <div>
-        <h1>{this.state.name}</h1>
+        <Camper />
       </div>
     );
   }
@@ -19,11 +16,20 @@ class StatefulComponent extends React.Component {
 
 
 // Challenge:
-  //Initialize the component with state in the constructor
-  // and assign your name to a property of name.
+  //Define the Camper component and assign it default props of { name: 'CamperBot' }.
+  //Inside the Camper component, render any code that you want, but make sure to have
+    // one p element that includes only the name value that is passed in as a prop.
+  //Finally, define propTypes on the Camper component to require name to be provided
+    // as a prop and verify that it is of type string.
 
 // Solution:
 
-this.state = {
-  name: 'Amal'
-}
+const Camper = props => <p>{props.name}</p>;
+
+Camper.defaultProps = {
+  name: "CamperBot"
+};
+
+Camper.propTypes = {
+  name: PropTypes.string.isRequired
+};
