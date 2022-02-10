@@ -8,6 +8,9 @@ class MyComponent extends React.Component {
     }
   }
   render() {
+    // Change code below this line
+
+    // Change code above this line
     return (
       <div>
         { /* Change code below this line */ }
@@ -20,9 +23,19 @@ class MyComponent extends React.Component {
 
 
 // Challenge:
-  // Define an h1 tag in the component's render method which renders the value
-   // of name from the component's state.
+  //In the MyComponent render method, define a const called name and set
+  // it equal to the name value in the component's state.
+  //Next, in the return statement, render this value in an h1 tag using the variable name.
 
 // Solution:
 
-<h1>{this.state.name}</h1>
+// Change code below this line
+const name = this.state.name
+// Change code above this line
+return (
+  <div>
+    { /* Change code below this line */ }
+    <h1>{name}</h1>
+    { /* Change code above this line */ }
+  </div>
+)
